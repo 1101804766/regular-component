@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style>
+		html,body,p,ul,li{padding: 0;margin: 0;}
+	</style>
+	<link rel="stylesheet" href="css/component.css">
+</head>
+<body>
+	<div id="container">
+
+	</div>
+	<script src="js/lib/regular.js"></script>
+	<script src="js/component.js"></script>
+	<script>
+		// var actionsheet = new C.ActionSheet({
+		// 	data: {
+		// 		items: [
+		// 			{
+		// 				name: '发布',
+		// 				handler: function() {
+		// 					alert(1);
+		// 				}
+		// 			},
+		// 			{
+		// 				name: '删除',
+		// 				color: '#f00',
+		// 				handler: function() {
+		// 					alert(1);
+		// 				}
+		// 			},
+		// 			{
+		// 				name: '编辑',
+		// 				handler: function() {
+		// 					alert(2);
+		// 				}
+		// 			}
+		// 		]
+		// 	}
+		// });
+		// actionsheet.$inject('#container');
+
+		// var star = new C.Star({
+		// 	data: {
+		// 		defaultText: '请选择',
+		// 		showLabel: true,
+		// 		items: {
+		// 			1: '心情很差',
+		// 			2: '心情一般',
+		// 			3: '心情比较好',
+		// 			4: '心情非常好',
+		// 			5: '心情超级好'
+		// 		}
+		// 	}
+		// });
+		// star.$inject('#container');
+
+		// var header = new C.Header({
+		// 	data: {
+		// 		title: '姓名',
+		// 		buttonText: '保存',
+		// 		confirmCallback: function() {
+		// 			alert(1);
+		// 		}
+		// 	}
+		// }).$inject('#container');
+
+		// var loading = new Loading({
+		// 	data: {
+		// 		loadingLabel: '上传中'
+		// 	}
+		// }).$inject('#container');
+
+		// var toast = new Toast({
+		// 	data: {
+		// 		message: '操作失败，请重试'
+		// 	}
+		// }).$inject('#container');
+
+		// var upload = new Upload({
+		// 	data: {
+		// 		max: 9,
+		// 		formDataKey: 'userpic',
+		// 		limitSize: false,
+		// 		size: 2,
+		// 		suffix: /(jpg|png|bmp|jpeg|gif)/
+		// 	},
+		// 	uploadUrl: '//'
+		// });
+		// upload.$inject('#container');
+
+		var card = new C.Card({
+			data: {
+				cancelBtnText: '取消',
+				confirmBtnText: '确定',
+				width: '270px',
+				height: 'auto',
+				single: true,
+				headerImage: 'https://timgsa.baidu.com/timg?image&quality=80&size=b10000_10000&sec=1477462257884&di=d513a9facb232470c0ae19d5f42e752d&imgtype=jpg&src=http%3A%2F%2Fimgsrc.baidu.com%2Fbaike%2Fpic%2Fitem%2Fa6efce1b9d16fdfac666d143b08f8c5494ee7b10.jpg',
+				confirmCallback: function() {
+					alert(1);
+				},
+				contentHtml: '<select name="xx"><option value="0">请选择</option><option value="1">111</option></select>'
+			}
+		}).$inject('#container');
+	</script>
+</body>
+</html>

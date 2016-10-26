@@ -1,0 +1,27 @@
+.upload-box{
+
+}
+.upload-box .empty{
+    position: relative;
+    padding: 40px 0;
+    font-size: 0.875rem;
+}
+.upload-box .upload-input{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.upload-box .icon-plus{
+	background: url(../img/plus.png) no-repeat 0 0;
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-size: 44px;
+    margin-bottom: 10px;
+}
