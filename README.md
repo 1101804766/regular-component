@@ -24,7 +24,4 @@ regular常用组件
         items: items
       }
     }).$inject(document.body);
-   ```
-  
-## 2、Star组件
-    此组件用于打分，也就是我们常见的淘宝给商品评价打星星
+  ```
