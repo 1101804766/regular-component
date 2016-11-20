@@ -1,0 +1,58 @@
+.comment-dialog{
+	background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 95%;
+    height: 100%;
+    max-width: 480px;
+    padding: 0 2.5%;
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+.comment-dialog .icon-close{
+	position: absolute;
+    top: 0;
+    right: 2.5%;
+    width: 30px;
+    height: 30px;
+    background-image: none;
+    color: #999;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.comment-dialog textarea{
+	width: 100%;
+    overflow: hidden;
+    height: 220px;
+    padding: 10px;
+    font-size: 0.875rem;
+    margin-top: 25px;
+    box-sizing: border-box;
+}
+.comment-dialog .emotion{
+	float: left;
+}
+.comment-dialog .btn{
+	width: 80px;
+	font-size: 0.875rem;
+	margin-left: 2.5%;
+	line-height: 30px;
+	border-radius: 3px;
+}
+.comment-dialog .btn-cancel{
+	color:#666;
+	background-color: #fff;
+	border: 1px solid #ececec;
+}
+
+.comment-dialog .btn-pub{
+	color:#fff;
+	background-color: #23dacd;
+	border: 1px solid #23dacd;
+}
+.comment-dialog .btn-pub.disabled{
+    background-color: #ccc;
+    border-color: #ccc;
+}
