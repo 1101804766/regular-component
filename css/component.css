@@ -9,3 +9,16 @@
 @import "upload.css";
 @import "dialog.css";
 @import "flexbox.css";
+
+.tc{text-align:center}
+.tl{text-align:left}
+.tr{text-align:right}
+.hide{diaply: none !important}
+
+.z1{z-index:1}
+.z2{z-index:2}
+.z3{z-index:3}
+.z4{z-index:4}
+.z5{z-index:5}
+.z6{z-index:6}
+.zF{z-index:999}
