@@ -1,5 +1,48 @@
 .upload-box{
-
+    margin-bottom: 10px;
+    background-color: #fff;
+}
+.upload-box ul{
+    padding: 10px 2.5%;
+    overflow: hidden;
+}
+.upload-box .item {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    margin-right: 3%;
+    margin-bottom: 8px;
+    float: left;
+    position: relative;
+}
+.upload-box .item .icon-delete{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(/static/m/images/delete.png) no-repeat 0 0;
+    background-size: 18px;
+    position: absolute;
+    top: -8px;
+    right: -6px;
+    cursor: pointer;
+}
+.upload-box .item:last-child{
+    position: relative;
+}
+.upload-box .item:last-child .upload-input{
+    width: 48px;
+    height: 48px;
+}
+.upload-box .item img{
+    width: 100%;
+    height: 100%;
+}
+.upload-box .preview{
+    width: 95%;
+    margin: 0 auto;
+}
+.upload-box .preview img{
+    width: 100%
 }
 .upload-box .empty{
     position: relative;
@@ -18,10 +61,10 @@
 }
 
 .upload-box .icon-plus{
-	background: url(../img/plus.png) no-repeat 0 0;
+	background: url(/static/m/images/component/plus.png) no-repeat 0 0;
     display: inline-block;
     width: 44px;
     height: 44px;
     background-size: 44px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
