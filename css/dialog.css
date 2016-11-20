@@ -1,0 +1,42 @@
+.dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    height: 160px;
+    padding: 23px 10%;
+    background-color:#fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.dialog .title{
+    font-size: 0.875rem;
+    margin: 20px 0;
+}
+.dialog .btn-group{
+    disply: -webkit-flex;
+    display: flex;
+}
+.dialog .btn{
+    -webkit-flex: 1;
+    flex: 1;
+    line-height: 30px;
+    margin: 0 5%;
+    padding: 0 15px;
+    border: 1px solid;
+    font-size: 0.875rem;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.dialog .btn-cancel{
+    color:#666;
+    border-color:#ddd;
+}
+.dialog .btn-ok{
+    background-color:#23dacd;
+    color:#fff;
+}
