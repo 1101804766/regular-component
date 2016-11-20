@@ -8,18 +8,21 @@
 	border-bottom: 1px solid #ddd;
 	background-color: #fff;
 	text-align: center;
-	z-index: 999;
+	color:#333;
 }
 .title a{
 	position: absolute;
 	font-size: 0.9375rem;
 	color: #23dacd;
 }
-.icon-back{
+.title .icon-back{
 	left: 5%;
-	width: 30px;
-	height: 30px;
 	top: 7px;
+	margin: 0 !important;
+    background: #fff url(/static/m/images/common/arrows_r_g.png) no-repeat 100% 0 !important;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 .btn-link{
 	right: 5%;
