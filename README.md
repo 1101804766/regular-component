@@ -6,25 +6,25 @@ regular常用组件
    调用方式如下：
 
 ```javascript
-    var items = [{
-      name: '评论',
-      handler: function() {
-        actionsheet.destroy();
-        // TODO
-      }
-    }, {
-      name: '删除',
-      color: '#f00',
-      handler: function() {
-          actionsheet.destroy();
-          // TODO
-      }
-    }];
-    var actionsheet = new C.ActionSheet({
-      data: {
-        items: items
-      }
-    }).$inject(document.body);
+var items = [{
+ name: '评论',
+ handler: function() {
+   actionsheet.destroy();
+   // TODO
+ }
+}, {
+ name: '删除',
+ color: '#f00',
+ handler: function() {
+     actionsheet.destroy();
+     // TODO
+ }
+}];
+var actionsheet = new C.ActionSheet({
+ data: {
+   items: items
+ }
+}).$inject(document.body);
 ```
 ## 2、Star组件
    调用时，直接传入level的值就可以了，取值为[0, 5]，取值0时，一颗星都不选中。
@@ -84,10 +84,31 @@ var flexbox = new C.FlexBox({
             ...
         ]
     }
-})
+}).$inject('#container');
 ```
 ## 4、Loading组件
    也就是通常我们看到的加载中的转菊花效果。调用非常简单，component.js里面封装了一个showLoading的方法，直接调用：
 ```javascript
 var loadingObj = C.showLoading('正在加载');
 ```
+## 5、Toast组件
+   模拟android和iOS里面的toast，接收message和duration(经过多长时间消失，默认2s) 2个参数。可以直接调用component.js里面封装好的showToast方法，直接调用：
+```javascript
+C.showToast('操作成功！');
+```
+
+## 6、Dialog组件
+   对话框组件，支持简单的对话框，调用方式：
+```javascript
+var dialog = new C.Dialog({
+    data: {
+        single: false,
+        confirmBtnText: '确定',
+        cancelBtnText: '取消',
+        confirmCallback: function() {},
+        cancelCallback: function() {}
+    }
+}).$inject(document.body);
+```
+
+未完待续
