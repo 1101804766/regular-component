@@ -1,8 +1,11 @@
 @import "actionsheet.css";
 @import "card.css";
-@import "component.css";
+@import "comment.css";
+@import "comment-dialog.css";
 @import "header.css";
 @import "loading.css";
 @import "star.css";
 @import "toast.css";
 @import "upload.css";
+@import "dialog.css";
+@import "flexbox.css";
