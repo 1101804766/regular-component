@@ -26,3 +26,68 @@ regular常用组件
       }
     }).$inject(document.body);
 ```
+## 2、Star组件
+   调用时，直接传入level的值就可以了，取值为[0, 5]，取值0时，一颗星都不选中。
+```javascript
+var star = new C.Star({
+    data: {
+        defaultText: '请选择',
+        showLabel: true,
+        level: 5,
+        items: {
+            1: '心情很差',
+            2: '心情一般',
+            3: '心情比较好',
+            4: '心情非常好',
+            5: '心情超级好'
+        }
+    }
+}).$inject('#conatiner'));
+```
+
+## 3、FlexBox组件
+   这里针对多栏布局，比如微信钱包功能里面的布局方式，每栏的上面是icon，下面文字（这里文字最多5个字，超过截取前5个字）。
+```javascript
+var flexbox = new C.FlexBox({
+    data: {
+        column: 3, // 默认三列布局，支持2、3、4
+        list: [
+            {
+               icon: 'icon-didi',
+               text: '滴滴出行',
+               handler: function() {
+                
+               }
+            },
+            {
+               icon: 'icon-train-ticket',
+               text: '火车票',
+               handler: function() {
+               
+               }
+            },
+            
+            {
+               icon: 'icon-hotel',
+               text: '酒店',
+               handler: function() {
+               
+               }
+            },
+            {
+               icon: 'icon-meilishuo',
+               text: '美丽说',
+               handler: function() {
+               
+               }
+            },
+            ...
+        ]
+    }
+})
+```
+## 4、Loading组件
+   也就是通常我们看到的加载中的转菊花效果。调用非常简单，component.js里面封装了一个showLoading的方法，直接调用：
+```javascript
+var loadingObj = C.showLoading('正在加载');
+```
